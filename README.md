@@ -1,4 +1,4 @@
-# CV
-Matthew Davies online technical CV
-Student Number: 24929239
-e-mail: mdldavies@gmail.com
+# Online Technical CV 
+- Name: Matthew Davies
+- e-mail: mdldavies@gmail.com
+- Student Number: 24929239
