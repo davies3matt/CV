@@ -1,20 +1,26 @@
-<div>
-<app-background><div class="background">
-    <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="container1">
-               <h1>Matthew Davies</h1>
-              <br>
-            </div>
-            <br>
-        </div>
-        </div>
-      </div>
-    <p>Hello World!</p>
-    <button (click)="onClick()" class="btn btn-primary">Click Me</button>
-    <app-spotify></app-spotify>
+<div class="background">
+<div class="waveWrapper waveAnimation">
+  <div class="waveWrapperInner bgTop">
+    <h1 style="text-align: center ">Matthew Davies</h1>
+    <h2 style="text-align: center;">Online CV</h2>
+    <hr style="align-content: center;">
+    <br>
+    <app-gradient-button (activate)="onActivate($event)">START</app-gradient-button>
+    <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgMiddle">
+    <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgBottom">
+    <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+  </div>
 </div>
-<router-outlet></router-outlet>
-</app-background>
+</div>
+<app-news></app-news>
+<div class="wrapper">
+  <button (click)="toggleShowDiv('divA')">TOGGLE DIV</button>
+  <div [@slideInOut]="animationState" style="height: 100px; background-color: red;">
+  THIS DIV IS ANIMATED</div>
+  <div class="content">THIS IS CONTENT DIV</div>
+</div>
 
