@@ -1,4 +1,15 @@
 .container {
-    width: 100px;
-    height: 100px;
-}
+    background-color: darkcyan;
+    opacity: 0.9;
+    border-radius: 10px;
+  }
+  h1 {
+    opacity: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+  }
+
+  
+  

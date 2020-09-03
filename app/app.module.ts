@@ -3,20 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SpotifyComponent } from './spotify/spotify.component';
 import { BackgroundComponent } from './background/background.component';
-import { HttpClientModule } from '@angular/common/http';
-import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BackgroundComponent,
-    NewsComponent
+    SpotifyComponent,
+    BackgroundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
